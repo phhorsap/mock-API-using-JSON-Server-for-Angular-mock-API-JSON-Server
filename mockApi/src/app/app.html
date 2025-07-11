@@ -1,0 +1,23 @@
+<h1>Hello Angular</h1>
+
+<div class="container mt-5" style="background-color: rgb(114, 204, 235);">
+    <h2>Data from JSON Server  
+        <button class="btn btn-primary"> + เพิ่มรายการ นักเรียน</button>
+    </h2>
+    @for(s of students; track s.id) {
+    <div class="card mb-3" style="background-color: rgb(243, 173, 173);">
+        <div class="card-body">
+            <h5 class="card-title">{{s.name}}</h5>
+
+            <p class="card-text">Email: {{s.email}}</p>
+            <button  class="btn btn-primary" > แก้ไข!!</button>
+        <button class="btn btn-danger ms-2"> ลบ!!</button>
+        </div>
+        
+    </div>
+
+    }
+
+
+
+</div>
